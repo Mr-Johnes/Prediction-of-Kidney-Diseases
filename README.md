@@ -16,9 +16,15 @@ How to run this app:
    ![image](https://github.com/user-attachments/assets/9cdb25bd-09a8-4055-b605-919caa930448)
 2. Afeter downloading: Extract the file.
 3. And open the folder containing app.py in Terminal.
-4. On terminal command run or paste the command: pthon app.py.(Do make sure that you have installed python in your device.)
+4. On terminal command run or paste the command: pthon app.py.(Do make sure that you have installed python in your device.).
+5. After running the above command, Copy the Local Address it is hosted on. Typically something like: (http://127.0.0.1:5000).
 
 Here's a demo on how this app runs:
+
+
+https://github.com/user-attachments/assets/73bb68d8-02e0-44c8-8a00-11796a61a090
+
+
 
 Home Page:
 ![image](https://github.com/user-attachments/assets/0dea7aa7-73ac-44ef-81c9-047bf16ff8d4)
