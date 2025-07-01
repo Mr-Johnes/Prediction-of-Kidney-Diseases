@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CKD Early Detection</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://plus.unsplash.com/premium_photo-1702598804759-8fb687f774fb?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .aligner{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+        .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-section {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 700px;
+      width: 100%;
+    }
+
+    .hero-section h1 {
+      font-size: 2.5rem;
+      color: #ffffff;
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-section img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .cta-box {
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .cta-box a.btn {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 1.2rem;
+      padding: 12px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .cta-box a.btn:hover {
+      background-color: #45a049;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+ <nav class="navbar navbar-dark shadow-sm" style="height: 100vh; background-color: rgba(0, 0, 0, 0.6);">
+  <div class="container d-flex flex-column justify-content-center align-items-center h-100">
+    <div class="aligner">
+    <!-- CKD Detector boxed text -->
+    <a class="fw-bold px-4 py-2 bg-light text-dark rounded shadow-sm mb-4"
+       href="{{ url_for('home') }}"
+       style="font-size: 2rem; border: 2px solid #333;padding: 10px;
+  margin: 5px;
+  background-color: lightblue;
+  border: 1px solid blue;">
+      CKD Detector
+    </a>
+
+    <!-- ScrollDown image below -->
+    <img src="{{ url_for('static', filename='ScrollDown.png') }}"
+         alt="Scroll Down"
+         style="width: 250px; height: auto; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); border-radius: 10px;">
+  </div>
+  </div>
+</nav>
+
+
+
+  <!-- Main Section -->
+  <div class="container">
+    <div class="hero-section">
+      <h1>Chronic Kidney Disease Early Detection</h1>
+      <p>Welcome! Click below to enter patient data and receive a prediction using our CKD detection model.</p>
+      <div class="aligner">
+      <!-- Image -->
+      <img src="{{ url_for('static', filename='demo1.png') }}" alt="CKD Detection Illustration">
+
+      <!-- CTA Box -->
+      <div class="cta-box mt-3">
+        <a href="{{ url_for('prediction') }}" class="btn">Enter Patient Data</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
