@@ -2,7 +2,7 @@
 
 This git repo is for the smartbridge summer internship project by
 Abhinav Sah,
-Aditya Praschar,
+Aditya Prashar,
 Greeshma Reddy,
 Ramansh Vasania
 
